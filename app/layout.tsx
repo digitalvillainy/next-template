@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Next JS Template",
@@ -14,15 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans flex flex-col min-h-screen">
-        <header>
-          header
-        </header>
+        <Header />
         <main className="grow">
           {children}
         </main>
-        <footer>
-          footer
-        </footer>
+        <Footer />
       </body>
     </html>
   );
